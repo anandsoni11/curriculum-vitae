@@ -1,0 +1,134 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Anand}
+\familyname{Soni}
+%\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
+\mobile{+91 8879006489}                    % optional, remove the line if not wanted
+\email{anand.92.soni@gmail.com}                      % optional, remove the line if not wanted
+\homepage{http://www.cse.iitb.ac.in/\~anandsoni}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2011--2015}{Bachelor of Technology, Computer Science and Engineering}{IIT Bombay}{Mumbai, India}{}{}  % arguments 3 to 6 can be left empty
+\cvline{GPA:}{\small 7.35/10.0}
+%\cvline{honors:}{\small Cum Laude}
+
+
+\section{Professional Experience}
+
+\cventry{May 2014--August 2014}{Google Summer of Code}{Mlpack : A C++ machine learning library}{}{}{
+\begin{itemize}
+  \item Improved the existing automatic benchmarking framework by implementing new performance metrics for various classification algorithms. Implemented one vs. all technique to convert multiclass classifiers into binary classifiers
+  \item Developed a Bootstrapping framework in Python and d3.js to rank and compare the performance of various other machine learning libraries like Scikit and Matlab with MLPack
+\end{itemize}
+}
+
+\cventry{May 2014--July 2014}{Intuit India Product Development Center}{Bangalore, India}{}{}{
+\begin{itemize}
+  \item Worked as a part of the Intuit Data Services team for the development of an error analysis and tracking tool for the QuickBooks Desktop care team
+  \item Developed REST based end points using Jersey and Splunk APIs. Integrated the end points with a user interface developed using AngularJS. Mavenized both the projects for automatic deployment
+  \item Ideated and developed QUANT (QuickBooks Analytics Tool) for the small businesses to grow based on their current business, customers and competitors data, during Incubation Week at Intuit IDC, Bangalore. Discussed the idea with Scott Cook, Founder, Intuit 
+  \item Offered a full time position (Pre Placement Offer) in recognition of my performance
+\end{itemize}
+}
+
+\section{Research Experience}
+\cventry{July 2014--November 2014}{Undergraduate Thesis - I}{\newline Guide : Prof. Umesh Bellur}{}{}{
+\begin{itemize}
+  \item Worked on the experimental comparison of various optimization techniques to minimize the host VM’s downtime and the total migration time for live migration
+  \item Implemented a framework to analyze the rate at which pages get dirty which can be used to dynamically change the migration rate
+  \end{itemize}
+}
+
+\cventry{January 2015--Present}{Undergraduate Thesis - II}{\newline Guide : Prof. Umesh Bellur}{}{}{
+\begin{itemize}
+  \item Worked on the experimental comparison of various optimization techniques to minimize the host VM’s downtime and the total migration time for live migration
+  \item Implemented a framework to analyze the rate at which pages get dirty which can be used to dynamically change the migration rate
+  \end{itemize}
+}
+
+\section{Key Academic Projects}
+\subsection{University of California, Los Angeles}
+\cvline{computer science}{Programming in C++, Digital Design, VHDL, CAD tools, Machine Language (MIPS), Computer Network Fundamentals, Physical Layer of Computer Networks, Programming Languages, Computer Architecture, Algorithms, Complexity Theory, Databases, Operating Systems, Digital Graphics}
+\cvline{electrical engineering}{Electromagnetics, Semiconductors, Systems and Signals, Circuit Analysis}
+\subsection{University of Wisconsin, Madison}
+\cvline{computer science}{Quantum Computing, Arithmetic Algorithms, Advanced Complexity Theory, Harmonic Analysis of Boolean Functions, Computational Cognitive Science, Bioinformatics, Combinatorics, Artificial Intelligence, Advanced Databases}
+\cvline{remote sensing}{Environmental Remote Sensing, Digital Image Processing}
+\cvline{business}{Entrepreneurship and Small Business Management, Venture Creation}
+
+\section{Honors and Awards}
+\cvline{honor societies}{Tau Beta Pi, Eta Kappa Nu, Golden Key, Upsilon Pi Epsilon}
+\cvline{dean's list}{2 semesters at UCLA}
+\cvline{fellowships}{Offered Southern California's Provost Ph.D. Fellowship in Electrical Engineering}
+
+\section{Miscellaneous Work}
+
+
+\section{Technical Skills}
+\subsection{Extremely Proficient With}
+\cvline{languages}{C, C++, Python, Ruby, JavaScript, Matlab, HTML, CSS, JSON}
+\cvline{technologies}{Django, Rails, Drupal CMS, MySQL, SQLite, \LaTeX{}, Bash Scripting, Git, Vim, PostgreSQL, jQuery, Bootstrap, Backbone, Windows, Ubuntu \& Red Hat Linux, OSX}
+\subsection{Have Experience With}
+\cvline{languages}{PHP, Java, Objective C, Fortran, Perl, Scheme, OCaml, ML, Lisp, Prolog, VHDL, IDL}
+\cvline{technologies}{Apache, Nginx, DB2, Joomla CMS, Dragonfly CMS, Emacs, Flash, Photoshop, Seashore, HAML, SQL Server, ENVI, Visual Studio, Eclipse, .NET}
+
+\section{Extra Curricular Activities}
+\cventry{2004--2007}{Ultimate Frisbee Club Team}{UCLA}{Los Angeles, CA}{}{
+Practiced four times a week and traveled across the western united states for between 10 and 12 tournaments each year.
+}
+\cventry{2007--2011}{Ultimate Frisbee Club Teams}{UW-Madison}{Madison, WI}{}{
+Practiced and traveled with three Madison based ultimate frisbee club teams.
+Played in numerous recreational leagues.
+}
+\cventry{2007--2011}{Engineers Without Borders}{UW-Madison}{Madison, WI and Orongo, Kenya}{}{
+Began a long term irrigation system project to allow the members of Orongo to grow more profitable crops.
+Started an income generating agroforestry project at a Kenyan Primary School.
+Built and tested prototype biosand filters in both Kenya and Madison.
+Built and tested prototype low cost solar cookers in both Kenya and Madison.
+}
+\cventry{2011-present}{Ultimate Frisbee Club Teams}{Ultimate Chicago}{Chicago, IL}{}{
+Coached, captained, and played on several teams in recreational leagues.
+}
+\cventry{}{Other Current Hobbies}{}{}{}{
+Web Programming, Camping, Hiking, Backpacking, Traveling, Road Trips, Basketball, Piano, Guitar
+}
+
+
+\end{document}
