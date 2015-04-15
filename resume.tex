@@ -70,65 +70,90 @@
 }
 
 \section{Research Experience}
-\cventry{July 2014--November 2014}{Undergraduate Thesis - I}{\newline Guide : Prof. Umesh Bellur}{}{}{
+\cventry{Jul \'14--Nov \'14}{Undergraduate Thesis - I}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{}{
 \begin{itemize}
   \item Worked on the experimental comparison of various optimization techniques to minimize the host VM’s downtime and the total migration time for live migration
-  \item Implemented a framework to analyze the rate at which pages get dirty which can be used to dynamically change the migration rate
+  \item Implemented a framework to analyze memory dumps obtained during migration for amount of dirtiness and existence of duplicate pages (full-page, sub-page and chunk-level)
+  \item Implemented an optimization over the pre-copy approach which uses the merge sort algorithm to sort page groups based on their dirty counts
   \end{itemize}
 }
 
-\cventry{January 2015--Present}{Undergraduate Thesis - II}{\newline Guide : Prof. Umesh Bellur}{}{}{
+\cventry{Jan \'15--Present}{Undergraduate Thesis - II}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{}{
 \begin{itemize}
-  \item Worked on the experimental comparison of various optimization techniques to minimize the host VM’s downtime and the total migration time for live migration
-  \item Implemented a framework to analyze the rate at which pages get dirty which can be used to dynamically change the migration rate
+  \item Worked on the empirical evaluation of Light Weight Containers (LWCs) vs. Virtual Machines (VMs) on the grounds of shared memory usage and under various workloads. The evaluation was done with and without u-KSM enabled in the kernel
+  \item Currently, working on solving the problem of data center evacuation (VM migration) given a topology and a deadline
+  \item Implemented a Linear Programming solution to determine the rates at which each VM should be migrated, given the deadline
+  \item Simulated the migration of Virtual Machines in a given data center topology with each VM migrating through the best available path in terms of network bandwidth
   \end{itemize}
 }
 
 \section{Key Academic Projects}
-\subsection{University of California, Los Angeles}
-\cvline{computer science}{Programming in C++, Digital Design, VHDL, CAD tools, Machine Language (MIPS), Computer Network Fundamentals, Physical Layer of Computer Networks, Programming Languages, Computer Architecture, Algorithms, Complexity Theory, Databases, Operating Systems, Digital Graphics}
-\cvline{electrical engineering}{Electromagnetics, Semiconductors, Systems and Signals, Circuit Analysis}
-\subsection{University of Wisconsin, Madison}
-\cvline{computer science}{Quantum Computing, Arithmetic Algorithms, Advanced Complexity Theory, Harmonic Analysis of Boolean Functions, Computational Cognitive Science, Bioinformatics, Combinatorics, Artificial Intelligence, Advanced Databases}
-\cvline{remote sensing}{Environmental Remote Sensing, Digital Image Processing}
-\cvline{business}{Entrepreneurship and Small Business Management, Venture Creation}
+\cventry{Jan \'14--Apr \'14}{Simulation of Virtual Memory and File System, Operating Systems Lab}{\newline Guide : Prof. D M Dhamdhere, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Simulated the virtual memory organization in C. Implemented the page management and page replacement policies, allocation of physical memory, page tables and page faults
+  \item Also simulated the basic features of a file system to create, move and delete files and directories
+\end{itemize}
+}
 
-\section{Honors and Awards}
-\cvline{honor societies}{Tau Beta Pi, Eta Kappa Nu, Golden Key, Upsilon Pi Epsilon}
-\cvline{dean's list}{2 semesters at UCLA}
-\cvline{fellowships}{Offered Southern California's Provost Ph.D. Fellowship in Electrical Engineering}
+\cventry{Jul \'13--Nov \'13}{FileMesh – Sharing Files over the Network, Computer Networks Lab}{\newline Guide : Prof. Kameshwari Chebrolu, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Developed a file sharing system to store and retrieve files to and from multiple servers using sockets
+  \item Implemented UDP protocol for Store and TCP protocol for Get requests. Stored files as md5sums
+\end{itemize}
+}
+
+\cventry{Jul \'13--Nov \'13}{Travel Planner Webapp, Database and Information Systems Lab}{\newline Guide : Prof. Umesh Bellur, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Developed a Java webapp with PostgreSQL database for group and individual tour plannings
+  \item Worked with a large data of all the cities, states and countries of the world
+\end{itemize}
+}
+
+\cventry{Jul \'13--Nov \'13}{Buffer Overflow Attacks, Computer Architecture Lab}{\newline Guide : Prof. Bernard Menezes, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Analyzed program stack on a Linux x86 machine and implemented shell codes to implement a buffer overflow attack executing the sys\_rmdir system call 
+  \item Studied defence mechanisms against such attacks
+\end{itemize}
+}
+
+\cventry{Jul \'12--Nov \'12}{Data Compression System, Data Structures \& Algorithms Lab}{\newline Guide : Prof. Varsha Apte, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Implemented the Lempel-Ziv (LZ77) and the Run Length Encoding algorithms to compress files
+  \item Achieved 45\% compression for text, 80\% (monochrome) and 50\% (colored) compression for images
+\end{itemize}
+}
+
+\cventry{Jan \'12--Apr \'12}{Graphical Application in PLT-Scheme, Abstractions \& Paradigms Lab}{\newline Guide : Prof. Amitabha Sanyal, CSE, IIT Bombay}{}{}{
+\begin{itemize}
+  \item Developed two-player Chess implementing the Object Oriented Paradigm of programming
+  \item Designed and implemented algorithms for all special moves like Castling and Pawn promotion
+\end{itemize}
+}
+
+\section{Awards and Achievements}
+\cvline{IIT JEE, 2011}{Qualified in 2011 and ranked among the top 0.2\% of the 5,00,000 (approx.) candidates appeared}
+\cvline{AIEEE, 2011}{Qualified in 2011 and ranked among the top 0.1\% of about 10,50,000 candidates appeared }
+\cvline{Intuit IDC, Bangalore, 2014}{Awarded the Intuit Spotlight Award for an exceptional performance during the summer internship}
+\cvline{ACM, US, 2014}{Offered student membership and access to the ACM Digital library}
+\cvline{Scholarship}{Recipient of the IIT Bombay Institute MCM scholarship}
+\cvline{Academics}{Awarded an AA grade (highest grade) in my first Undergraduate thesis}
 
 \section{Miscellaneous Work}
+\cvline{Open Source}{Contributed to Mozilla QA by fixing various bugs and submitting patches. Actively contributing to the Open Source community}
+\cvline{Hackathon}{Developed a TxtWeb SMS application to get live updates of the FIFA world cup, 2014 during a hackathon organized at Intuit IDC, Bangalore}
+\cvline{Seminar}{Presented a seminar on “Kalman Filters in Robot Localization” to the class as a part of the Artificial Intelligence course, under guidance of Prof. Pushpak Bhattacharya, CSE, IIT Bombay}
 
 
 \section{Technical Skills}
-\subsection{Extremely Proficient With}
-\cvline{languages}{C, C++, Python, Ruby, JavaScript, Matlab, HTML, CSS, JSON}
-\cvline{technologies}{Django, Rails, Drupal CMS, MySQL, SQLite, \LaTeX{}, Bash Scripting, Git, Vim, PostgreSQL, jQuery, Bootstrap, Backbone, Windows, Ubuntu \& Red Hat Linux, OSX}
-\subsection{Have Experience With}
-\cvline{languages}{PHP, Java, Objective C, Fortran, Perl, Scheme, OCaml, ML, Lisp, Prolog, VHDL, IDL}
-\cvline{technologies}{Apache, Nginx, DB2, Joomla CMS, Dragonfly CMS, Emacs, Flash, Photoshop, Seashore, HAML, SQL Server, ENVI, Visual Studio, Eclipse, .NET}
+\cvline{Languages}{C, C++, Java, Python, Matlab, HTML, CSS}
+\cvline{Technologies}{MySQL, PostgreSQL, \LaTeX{}, Bash Scripting, Git, Vim, Bootstrap, AngularJS, BeautifulSoup}
+\cvline{Operating Systems}{Linux, Windows, OS X}
 
 \section{Extra Curricular Activities}
-\cventry{2004--2007}{Ultimate Frisbee Club Team}{UCLA}{Los Angeles, CA}{}{
-Practiced four times a week and traveled across the western united states for between 10 and 12 tournaments each year.
-}
-\cventry{2007--2011}{Ultimate Frisbee Club Teams}{UW-Madison}{Madison, WI}{}{
-Practiced and traveled with three Madison based ultimate frisbee club teams.
-Played in numerous recreational leagues.
-}
-\cventry{2007--2011}{Engineers Without Borders}{UW-Madison}{Madison, WI and Orongo, Kenya}{}{
-Began a long term irrigation system project to allow the members of Orongo to grow more profitable crops.
-Started an income generating agroforestry project at a Kenyan Primary School.
-Built and tested prototype biosand filters in both Kenya and Madison.
-Built and tested prototype low cost solar cookers in both Kenya and Madison.
-}
-\cventry{2011-present}{Ultimate Frisbee Club Teams}{Ultimate Chicago}{Chicago, IL}{}{
-Coached, captained, and played on several teams in recreational leagues.
-}
-\cventry{}{Other Current Hobbies}{}{}{}{
-Web Programming, Camping, Hiking, Backpacking, Traveling, Road Trips, Basketball, Piano, Guitar
-}
+\cvline{Community Work}{Volunteered as a student organizer and helped in managing logistics for a district level Polio Corrective Surgery Camp organized by the Rotary International }
+\cvline{Literary Arts}{Served as the Literary Prefect in my senior secondary school for a year. Conceptualized English extempore speaking and writing competitions. Published several articles in school magazine Renaissance}
+\cvline{Techfest, IIT Bombay}{Worked as a coordinator for the publicity of Techfest, the annual technical festival held at IIT Bombay}
+\cvline{Hobbies}{Programming, Travelling, Reading, Writing, Running}
 
 
 \end{document}
