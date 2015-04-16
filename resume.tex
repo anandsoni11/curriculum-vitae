@@ -30,7 +30,7 @@
 %\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
 \mobile{+91 8879006489}                    % optional, remove the line if not wanted
 \email{anand.92.soni@gmail.com}                      % optional, remove the line if not wanted
-\homepage{http://www.cse.iitb.ac.in/\~anandsoni}                % optional, remove the line if not wanted
+\homepage{http://www.cse.iitb.ac.in/\textasciitilde{}anandsoni}                % optional, remove the line if not wanted
 %\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
@@ -56,74 +56,76 @@
 \cventry{May 2014--August 2014}{Google Summer of Code}{Mlpack : A C++ machine learning library}{}{}{
 \begin{itemize}
   \item Improved the existing automatic benchmarking framework by implementing new performance metrics for various classification algorithms. Implemented one vs. all technique to convert multiclass classifiers into binary classifiers
-  \item Developed a Bootstrapping framework in Python and d3.js to rank and compare the performance of various other machine learning libraries like Scikit and Matlab with MLPack
+  \item Developed a \textbf{Bootstrapping framework} in Python and d3.js to rank and compare the performance of various other machine learning libraries like Scikit and Matlab with MLPack
 \end{itemize}
 }
 
 \cventry{May 2014--July 2014}{Intuit India Product Development Center}{Bangalore, India}{}{}{
 \begin{itemize}
   \item Worked as a part of the Intuit Data Services team for the development of an error analysis and tracking tool for the QuickBooks Desktop care team
-  \item Developed REST based end points using Jersey and Splunk APIs. Integrated the end points with a user interface developed using AngularJS. Mavenized both the projects for automatic deployment
-  \item Ideated and developed QUANT (QuickBooks Analytics Tool) for the small businesses to grow based on their current business, customers and competitors data, during Incubation Week at Intuit IDC, Bangalore. Discussed the idea with Scott Cook, Founder, Intuit 
-  \item Offered a full time position (Pre Placement Offer) in recognition of my performance
+  \item Developed REST based end points using Jersey and Splunk APIs. Integrated the end points with a user interface developed using AngularJS.
+  \item Ideated and developed \textbf{QUANT (QuickBooks Analytics Tool)} for the small businesses to grow based on their current business, customers and competitors data, during Incubation Week at Intuit IDC, Bangalore. 
 \end{itemize}
 }
 
+
 \section{Research Experience}
-\cventry{Jul \'14--Nov \'14}{Undergraduate Thesis - I}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{}{
+\cventry{}{Undergraduate Thesis - I}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{\hspace{115pt}\textit{Autumn, 2014}}{
 \begin{itemize}
-  \item Worked on the experimental comparison of various optimization techniques to minimize the host VM’s downtime and the total migration time for live migration
-  \item Implemented a framework to analyze memory dumps obtained during migration for amount of dirtiness and existence of duplicate pages (full-page, sub-page and chunk-level)
+  \item Worked on the experimental comparison of various live migration optimization techniques
+  \item Implemented a framework to analyze memory dumps obtained during migration for amount of dirtiness and existence of duplicate pages
   \item Implemented an optimization over the pre-copy approach which uses the merge sort algorithm to sort page groups based on their dirty counts
   \end{itemize}
 }
 
-\cventry{Jan \'15--Present}{Undergraduate Thesis - II}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{}{
+\cventry{}{Undergraduate Thesis - II}{\newline Guide : Prof. Umesh Bellur}{CSE, IIT Bombay}{\hspace{125pt}\textit{Spring, 2015}}{
 \begin{itemize}
-  \item Worked on the empirical evaluation of Light Weight Containers (LWCs) vs. Virtual Machines (VMs) on the grounds of shared memory usage and under various workloads. The evaluation was done with and without u-KSM enabled in the kernel
+  \item Worked on the empirical evaluation of Light Weight Containers (LWCs) vs. Virtual Machines (VMs) on the grounds of shared memory usage and under various workloads
   \item Currently, working on solving the problem of data center evacuation (VM migration) given a topology and a deadline
-  \item Implemented a Linear Programming solution to determine the rates at which each VM should be migrated, given the deadline
-  \item Simulated the migration of Virtual Machines in a given data center topology with each VM migrating through the best available path in terms of network bandwidth
+  \item Implemented a Linear Programming solution to determine the rates at which each VM should be migrated, given the deadline. Simulated the migration of Virtual Machines in the given data center topology 
   \end{itemize}
 }
 
+\section{Publications}
+\cvline{IEEE-CLOUD, 2015, USA}{\textbf{On Exploiting Page Sharing in a Virtualised Environment - an Empirical Study of Virtualisation Verses Lightweight Containers}}
+
 \section{Key Academic Projects}
-\cventry{Jan \'14--Apr \'14}{Simulation of Virtual Memory and File System, Operating Systems Lab}{\newline Guide : Prof. D M Dhamdhere, CSE, IIT Bombay}{}{}{
+\cventry{}{Simulation of Virtual Memory and File System, Operating Systems Lab}{\newline Guide : Prof. D M Dhamdhere, CSE, IIT Bombay}{\hspace{115pt}\textit{Spring, 2014}}{}{
 \begin{itemize}
   \item Simulated the virtual memory organization in C. Implemented the page management and page replacement policies, allocation of physical memory, page tables and page faults
   \item Also simulated the basic features of a file system to create, move and delete files and directories
 \end{itemize}
 }
 
-\cventry{Jul \'13--Nov \'13}{FileMesh – Sharing Files over the Network, Computer Networks Lab}{\newline Guide : Prof. Kameshwari Chebrolu, CSE, IIT Bombay}{}{}{
+\cventry{}{Twitter Sentiment Analyzer, Artificial Intelligence Lab}{\newline Guide : Prof. Pushpak Bhattacharya, CSE, IIT Bombay}{\hspace{85pt}\textit{Spring, 2014}}{}{
+\begin{itemize}
+  \item Developed a Twitter sentiment analyzer to classify tweets as positive, negative and neutral
+  \item Implemented and trained a Fast-forward Neural Network with the backpropagation algorithm and a marked corpus of tweets  
+\end{itemize}
+}
+
+\cventry{}{FileMesh – Sharing Files over the Network, Computer Networks Lab}{\newline Guide : Prof. Kameshwari Chebrolu, CSE, IIT Bombay}{{\hspace{115pt}\textit{Autumn, 2013}}{}{
 \begin{itemize}
   \item Developed a file sharing system to store and retrieve files to and from multiple servers using sockets
   \item Implemented UDP protocol for Store and TCP protocol for Get requests. Stored files as md5sums
 \end{itemize}
 }
 
-\cventry{Jul \'13--Nov \'13}{Travel Planner Webapp, Database and Information Systems Lab}{\newline Guide : Prof. Umesh Bellur, CSE, IIT Bombay}{}{}{
+\cventry{}{Travel Planner Webapp, Database and Information Systems Lab}{\newline Guide : Prof. Umesh Bellur, CSE, IIT Bombay}{\hspace{115pt}\textit{Autumn, 2013}}{}{
 \begin{itemize}
   \item Developed a Java webapp with PostgreSQL database for group and individual tour plannings
   \item Worked with a large data of all the cities, states and countries of the world
 \end{itemize}
 }
 
-\cventry{Jul \'13--Nov \'13}{Buffer Overflow Attacks, Computer Architecture Lab}{\newline Guide : Prof. Bernard Menezes, CSE, IIT Bombay}{}{}{
-\begin{itemize}
-  \item Analyzed program stack on a Linux x86 machine and implemented shell codes to implement a buffer overflow attack executing the sys\_rmdir system call 
-  \item Studied defence mechanisms against such attacks
-\end{itemize}
-}
-
-\cventry{Jul \'12--Nov \'12}{Data Compression System, Data Structures \& Algorithms Lab}{\newline Guide : Prof. Varsha Apte, CSE, IIT Bombay}{}{}{
+\cventry{}{Data Compression System, Data Structures \& Algorithms Lab}{\newline Guide : Prof. Varsha Apte, CSE, IIT Bombay}{\hspace{120pt}\textit{Autumn, 2012}}{}{
 \begin{itemize}
   \item Implemented the Lempel-Ziv (LZ77) and the Run Length Encoding algorithms to compress files
   \item Achieved 45\% compression for text, 80\% (monochrome) and 50\% (colored) compression for images
 \end{itemize}
 }
 
-\cventry{Jan \'12--Apr \'12}{Graphical Application in PLT-Scheme, Abstractions \& Paradigms Lab}{\newline Guide : Prof. Amitabha Sanyal, CSE, IIT Bombay}{}{}{
+\cventry{}{Graphical Application in PLT-Scheme, Abstractions \& Paradigms Lab}{\newline Guide : Prof. Amitabha Sanyal, CSE, IIT Bombay}{\hspace{115pt}\textit{Spring, 2012}}{}{
 \begin{itemize}
   \item Developed two-player Chess implementing the Object Oriented Paradigm of programming
   \item Designed and implemented algorithms for all special moves like Castling and Pawn promotion
@@ -131,17 +133,17 @@
 }
 
 \section{Awards and Achievements}
-\cvline{IIT JEE, 2011}{Qualified in 2011 and ranked among the top 0.2\% of the 5,00,000 (approx.) candidates appeared}
-\cvline{AIEEE, 2011}{Qualified in 2011 and ranked among the top 0.1\% of about 10,50,000 candidates appeared }
-\cvline{Intuit IDC, Bangalore, 2014}{Awarded the Intuit Spotlight Award for an exceptional performance during the summer internship}
+\cvline{IIT JEE, 2011}{Qualified in 2011 and ranked among the \textbf{top 0.2\%} of the 5,00,000 (approx.) candidates appeared}
+\cvline{AIEEE, 2011}{Qualified in 2011 and ranked among the \textbf{top 0.1\%} of about 10,50,000 candidates appeared }
+\cvline{Intuit IDC, Bangalore, 2014}{Awarded the \textbf{Intuit Spotlight Award} for an exceptional performance during the summer internship. Offered a full time position \textbf{(Pre Placement Offer)} in recognition of my performance}
 \cvline{ACM, US, 2014}{Offered student membership and access to the ACM Digital library}
 \cvline{Scholarship}{Recipient of the IIT Bombay Institute MCM scholarship}
-\cvline{Academics}{Awarded an AA grade (highest grade) in my first Undergraduate thesis}
+\cvline{Academics}{Awarded an \textbf{AA} grade (highest grade) in my first Undergraduate thesis}
 
 \section{Miscellaneous Work}
-\cvline{Open Source}{Contributed to Mozilla QA by fixing various bugs and submitting patches. Actively contributing to the Open Source community}
+\cvline{Open Source}{Contributed to \textbf{Mozilla QA} by fixing various bugs and submitting patches. Actively contributing to the Open Source community}
 \cvline{Hackathon}{Developed a TxtWeb SMS application to get live updates of the FIFA world cup, 2014 during a hackathon organized at Intuit IDC, Bangalore}
-\cvline{Seminar}{Presented a seminar on “Kalman Filters in Robot Localization” to the class as a part of the Artificial Intelligence course, under guidance of Prof. Pushpak Bhattacharya, CSE, IIT Bombay}
+\cvline{Seminar}{Presented a seminar on \textbf{“Kalman Filters in Robot Localization”} to the class as a part of the Artificial Intelligence course, under guidance of Prof. Pushpak Bhattacharya, CSE, IIT Bombay}
 
 
 \section{Technical Skills}
@@ -150,8 +152,8 @@
 \cvline{Operating Systems}{Linux, Windows, OS X}
 
 \section{Extra Curricular Activities}
-\cvline{Community Work}{Volunteered as a student organizer and helped in managing logistics for a district level Polio Corrective Surgery Camp organized by the Rotary International }
-\cvline{Literary Arts}{Served as the Literary Prefect in my senior secondary school for a year. Conceptualized English extempore speaking and writing competitions. Published several articles in school magazine Renaissance}
+\cvline{Community Work}{Volunteered as a student organizer and helped in managing logistics for a district level \textbf{Polio Corrective Surgery Camp} organized by the \textbf{Rotary International} }
+\cvline{Literary Arts}{Served as the \textbf{Literary Prefect} in my senior secondary school for a year. Conceptualized English extempore speaking and writing competitions. Published several articles in school magazine Renaissance}
 \cvline{Techfest, IIT Bombay}{Worked as a coordinator for the publicity of Techfest, the annual technical festival held at IIT Bombay}
 \cvline{Hobbies}{Programming, Travelling, Reading, Writing, Running}
 
